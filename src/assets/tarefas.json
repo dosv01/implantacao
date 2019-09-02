@@ -1,0 +1,115 @@
+{
+  "tarefas": [{
+      "tarefa": "Atualização Jira - Releases",
+      "d-": 15,
+      "data": "",
+      "responsavel": "PO",
+      "status": ""
+    },
+    {
+      "tarefa": "Criação Releases ITBM",
+      "d-": 15,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Criação Releases ITSM",
+      "d-": 13,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Criação e-Pert",
+      "d-": 12,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Extração Baseline",
+      "d-": 11,
+      "data": "",
+      "responsavel": "GEMUD",
+      "status": ""
+    },
+    {
+      "tarefa": "Criação Tasks",
+      "d-": 11,
+      "data": "",
+      "responsavel": "Dev Team",
+      "status": ""
+    },
+    {
+      "tarefa": "Releases em Pre-Production",
+      "d-": 10,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Certificações",
+      "d-": 10,
+      "data": "",
+      "responsavel": "Dev Team",
+      "status": ""
+    },
+    {
+      "tarefa": "Envio e-Pert",
+      "d-": 9,
+      "data": "",
+      "responsavel": "Dev Team",
+      "status": ""
+    },
+    {
+      "tarefa": "Envio de De Acordo",
+      "d-": 9,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Releases em Assess",
+      "d-": 9,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Go NoGo Prévio",
+      "d-": 8,
+      "data": "",
+      "responsavel": "GEMUD",
+      "status": ""
+    },
+    {
+      "tarefa": "Go NoGo Definitivo",
+      "d-": 7,
+      "data": "",
+      "responsavel": "GEMUD",
+      "status": ""
+    },
+    {
+      "tarefa": "CAB",
+      "d-": 4,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    },
+    {
+      "tarefa": "Ajustes e-Pert",
+      "d-": 3,
+      "data": "",
+      "responsavel": "Dev Team",
+      "status": ""
+    },
+    {
+      "tarefa": "Implantação",
+      "d-": 0,
+      "data": "",
+      "responsavel": "SM",
+      "status": ""
+    }
+  ]
+}
