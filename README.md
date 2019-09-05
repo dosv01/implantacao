@@ -1,2 +1,0 @@
-# implantacao
-acompanhamento de implantações
