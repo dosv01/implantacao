@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md">
+      <div class="card">
+        <div class="card-header">
+          <span>Cadastro de Implantações</span>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label>Squad</label>
+              <input type="text" class="form-control" [(ngModel)]="implantacao.squad" name="squad" />
+              <label>SM</label>
+              <input type="text" class="form-control" [(ngModel)]="implantacao.sm" name="squad" />
+              <label>Date and time</label>
+              <input class="form-control" type="date" [(ngModel)]="implantacao.dataImplantacao"
+                name="dataImplantacao" value="13/09/2019 22:00">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+  </div>
+</div>

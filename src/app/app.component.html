@@ -1,60 +1,48 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand">
-        <img src="assets/img/avanade.png" class="logo">
-      </a>
-      <span class="navbar-brand">Acompanhamento Implantação</span>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">
-          Início <span class="sr-only">(current)</span>
-        </a></li>
-      <li><a href="#">Releases</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="release">
+    <img src="/assets/img/avanade.png" width="50" height="50" alt="">
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="release">Releases <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="list-implantacao">Implantação</a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Implantação
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nova-implantacao">Nova</a>
+          <a class="dropdown-item" href="list-implantacao">Implantações</a>
+        </div>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Equipe
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nova-equipe">Nova</a>
+          <a class="dropdown-item" href="lista-equipe">Equipes</a>
+        </div>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="lista-tarefa">Tarefa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="lista-equipe">Equipe</a>
+      </li>
     </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
   </div>
 </nav>
 
-<div class="container-fluid">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputDate">Data da Implantação</label>
-      <input type="date" class="form-control" id="inputDate" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputDataAtual">Data Atual</label>
-      <input type="text" class="form-control" id="inputDataAtual" disabled value="31/08/2019">
-    </div>
-  </div>
-
-  <div class="container-fluid">
-
-    <div class="row">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Atividade</th>
-            <th scope="col">Data</th>
-            <th scope="col">Equipe</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody *ngFor="let tarefa of tarefas; let i = index">
-          <tr>
-            <th scope="row">{{i+1}}</th>
-            <td>{{tarefa.tarefa}}</td>
-            <td>01/01/2019</td>
-            <td>{{tarefa.responsavel}}</td>
-            <td>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md">
+      <div class="card">
+        <div class="card-header">
+          <span>Cadastro de Tarefa</span>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label>Descrição</label>
+              <input type="text" class="form-control" [(ngModel)]="tarefa.descricao" name="descricao" />
+            </div>
+            <div class="form-group">
+              <label>D-</label>
+              <input type="number" class="form-control" [(ngModel)]="tarefa.dias" name="dias" />
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo</label>
+              <select class="form-control" name="responsavel" id="responsavel" [(ngModel)]="tarefa.equipe.descricao">
+                <option [value]="equipe.descricao" *ngFor="let equipe of equipes | async">{{equipe.descricao}}</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+
+    <div class="col-md">
+      <div class="card">
+        <div class="card-header">
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">D-</th>
+              <th scope="col">Responsável</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Excluir</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let tarefa of tarefas | async; let i = index">
+            <tr>
+              <th scope="row">{{i+1}}</th>
+              <th scope="row">
+                <input type="text" class="form-control" [(ngModel)]="tarefa.descricao" name="descricao" />
+              </th>
+              <th scope="row">
+                <input type="text" class="form-control" [(ngModel)]="tarefa.dias" name="dias" />
+              </th>
+              <th scope="row">
+                {{tarefa.equipe.descricao}}
+              </th>
+              <th scope="row">
+                <button type="button" class="btn btn-default" (click)="edit(tarefa, tarefa.key)">Editar</button>
+              </th>
+              <th scope="row">
+                <button type="button" class="btn btn-danger ml-2" (click)="delete(tarefa.key)">Excluir</button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
